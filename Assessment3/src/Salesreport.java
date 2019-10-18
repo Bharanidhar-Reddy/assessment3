@@ -9,11 +9,11 @@ public class Salesreport {
 	public void setInvoice(int invoice) {
 		this.invoice = invoice;
 	}
-	private ArrayList<Stock> report=new ArrayList<>();
+	private ArrayList<Stock> report;
 	public Salesreport(int i,int in, ArrayList<Stock> report) {
 		this.invoice=i;
 		this.i = in;
-		this.report = report;
+		this.report = new ArrayList(report);
 	}
 	public int getI() {
 		return i;
