@@ -75,7 +75,6 @@ public class Mainclass {
 				if(in==1) {System.out.println("Enter valid Quantity of the item to add in Kg");
 				quant=Integer.parseInt(bb.nextLine());
 				dummies.get(0).setQuantity(quant);
-				System.out.println("quantiy  =  "+dummies.get(0).getQuantity());
 				}
 				else {System.out.println("Item removed succesfully");flag=false;break;}
 			}
@@ -99,7 +98,6 @@ public class Mainclass {
 			System.out.println("\nTotal : "+ total + " Rs");
 			System.out.println("----------------------------------------------------------------------------------------------------");
 			Salesreport rep=new Salesreport(invoice,cust,cart);
-			System.out.println(rep.getReport().get(0).getName());
 			sales.add(rep);
 			invoice+=30;
 			cust+=1;
